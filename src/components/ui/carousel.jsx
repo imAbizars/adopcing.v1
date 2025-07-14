@@ -26,6 +26,7 @@ function Carousel({
   plugins,
   className,
   children,
+  onSlideChange,
   ...props
 }) {
   const [carouselRef, api] = useEmblaCarousel({
@@ -39,7 +40,8 @@ function Carousel({
     if (!api) {
       return
     }
-
+    const index = api.selectedScrollSnap(); 
+    onSlideChange?.(index);
     setCanScrollPrev(api.canScrollPrev())
     setCanScrollNext(api.canScrollNext())
   }, [])

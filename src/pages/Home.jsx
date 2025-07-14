@@ -1,20 +1,26 @@
-import React from "react";
-import HeroText from "@/components/homepage/HeroText";
-import CatImageWithEyes from "@/components/homepage/ImageCatEyes";
-import Carousel from "@/components/homepage/Carousel";
+import React, { useState } from "react"
+import HeroText from "@/components/homepage/HeroText"
+import CatImageWithEyes from "@/components/homepage/ImageCatEyes"
+import Carousel from "@/components/homepage/Carousel"
+import HeroText2 from "@/components/homepage/HeroText2"
+import { carousellist } from "@/components/homepage/Corousellist"
 
 export default function Home({ eyeRefs }) {
+  const [selectedCat, setSelectedCat] = useState(carousellist[0])
+
   return (
     <div className="min-h-screen">
-        {/* section 1 */}
-      <section className="flex sm:justify-center  sm:flex-row pt-20 sm:space-x-10 pb-30 border border-black">
+      {/* section 1 */}
+      <section className="flex sm:justify-center sm:flex-row pt-20 sm:space-x-10 pb-30">
         <HeroText />
         <CatImageWithEyes eyeRefs={eyeRefs} />
       </section>
+
       {/* section 2 */}
-      <section className="flex sm:justify-center sm:flex-col pt-20 ">
-            <Carousel/>
+      <section className="flex sm:justify-center gap-40 sm:flex-row pt-20 pb-30">
+        <Carousel onSlideChange={setSelectedCat} />
+        <HeroText2 cat={selectedCat} />
       </section>
     </div>
-  );
+  )
 }
