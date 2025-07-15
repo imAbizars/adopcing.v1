@@ -14,7 +14,7 @@ export default function HeroText() {
         untuk menjaga kucing kesayangan Anda tetap sehat dan bahagia.
         Bersama, kita menciptakan dunia yang lebih baik untuk mereka.
       </p>
-      <Button className=" mt-7 transition-all font-bold">
+      <Button className=" mt-7  font-bold">
         Addopt
       </Button>
     </FadeInSection>

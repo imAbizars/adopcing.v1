@@ -12,15 +12,22 @@ export default function HeroText2({ cat }) {
         </FadeInSection>
 
         <FadeInSection
-        animate={{opacity:1,y:0}}
-        initial={{opacity:0,y:100}} 
+        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        className="" // kamu bisa ubah 250px sesuai kebutuhan
         >
             <p className="text-gray-800 text-base">{cat.cerita}</p>
-            <div className="flex space-x-10 mt-10 ">
-                <Button className="font-bold h-20 w-35">Addopt <br />{cat.nama}</Button>
-                <Button className="font-bold h-20 w-35  ">Feed <br />{cat.nama} <br />RP.5000/gram</Button>
+
+            <div className="flex space-x-10 mt-7">
+                <Button className="font-bold h-17 w-[140px] text-sm leading-tight text-center">
+                Addopt <br /> {cat.nama}
+                </Button>
+                <Button className="font-bold h-17 w-[140px] text-sm leading-tight text-center">
+                Feed <br /> {cat.nama} <br /> RP.5000/gram
+                </Button>
             </div>
         </FadeInSection>
+
     </div>
   )
 }

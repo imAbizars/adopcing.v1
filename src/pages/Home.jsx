@@ -12,19 +12,19 @@ export default function Home({ eyeRefs }) {
   return (
     <div className="min-h-screen">
       {/* section 1 */}
-      <section className="flex sm:justify-center sm:flex-row pt-20 sm:space-x-10 pb-30">
+      <section className="flex sm:justify-center sm:flex-row pt-20 sm:space-x-10 pb-30 border-b-4">
         <HeroText />
         <CatImageWithEyes eyeRefs={eyeRefs} />
       </section>
 
       {/* section 2 */}
-      <section className="bg-secondary-background flex sm:justify-center gap-40 sm:flex-row p-20 ">
+      <section className="bg-secondary-background flex sm:justify-center gap-40 sm:flex-row p-20 border-b-4">
         <Carousel onSlideChange={setSelectedCat} />
         <HeroText2 
         cat={selectedCat}
         key={selectedCat.id}/>
       </section>
-      <section className="bg-background flex sm:flex-row pt-20 pb-20">
+      <section className="bg-background flex sm:flex-row ">
         <HeroText3/>
       </section>
     </div>
