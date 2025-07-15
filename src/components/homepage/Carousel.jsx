@@ -3,11 +3,10 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
+  CarouselNext, 
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { carousellist } from "./Corousellist"
-import FadeInSection from "../animations/FadeInSection"
 import { useEffect, useState } from "react"
 
 export default function CarouselDemo({ onSlideChange }) {
@@ -28,7 +27,6 @@ export default function CarouselDemo({ onSlideChange }) {
   }, [api])
 
   return (
-    <FadeInSection>
       <Carousel className="w-full max-w-[450px]" setApi={setApi}>
         <CarouselContent>
           {carousellist.map((cat) => (
@@ -47,6 +45,5 @@ export default function CarouselDemo({ onSlideChange }) {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </FadeInSection>
   )
 }
