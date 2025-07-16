@@ -42,7 +42,7 @@ export default function HeroText3() {
   }, [charIndex, textIndex]);
 
   return (
-    <div className="relative w-full h-full pt-20 pb-40">
+    <div className="relative w-full h-full pt-30 pb-50">
       {/* gambar kucing */}
       <FadeInSection
         className="absolute bottom-0 left-0"
@@ -53,7 +53,7 @@ export default function HeroText3() {
         <div className="w-full max-w-[10rem] sm:ml-2 relative" onClick={handleClick}>
             {textIndex >= 0 && textIndex < texts.length && (
             <FadeInSection
-                className="w-full max-w-[300px] text-sm text- font-semibold bg-white p-2 border-2 border-black rounded-xl "
+                className="w-full max-w-[300px] text-center text-sm font-semibold bg-white p-2 border-2 border-black rounded-xl "
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}

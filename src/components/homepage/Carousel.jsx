@@ -19,7 +19,7 @@ export default function CarouselDemo({ onSlideChange }) {
       onSlideChange?.(carousellist[index])
     }
     api.on("select", handleSelect)
-    handleSelect() // panggil pertama kali
+    handleSelect() 
 
     return () => {
       api.off("select", handleSelect)
@@ -27,7 +27,7 @@ export default function CarouselDemo({ onSlideChange }) {
   }, [api])
 
   return (
-      <Carousel className="w-full max-w-[450px]" setApi={setApi}>
+      <Carousel className="w-full max-w-[450px] " setApi={setApi}>
         <CarouselContent>
           {carousellist.map((cat) => (
             <CarouselItem key={cat.id}>
