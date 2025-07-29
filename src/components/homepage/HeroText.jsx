@@ -6,15 +6,13 @@ export default function HeroText() {
     <FadeInSection 
     initial={{opacity:0,y:100}}
     animate={{opacity:1,y:0}}
-    className="w-3/4 sm:w-2/4 sm:pt-20">
+    className="w-3/4 sm:w-2/4 ">
       <h1 className="text-6xl font-nunito font-bold">Welcome To Adopcing.</h1>
-      <p className="mt-10">
+      <p className="text-lg mt-10">
         Rumah bagi mereka yang peduli dan mencintai kucing.
         Temukan sahabat berbulu yang siap diadopsi atau pilih makanan terbaik
-        untuk menjaga kucing kesayangan Anda tetap sehat dan bahagia.
-        Bersama, kita menciptakan dunia yang lebih baik untuk mereka.
       </p>
-      <Button className=" mt-7  font-bold">
+      <Button className=" mt-7 font-bold text-xl p-6 ">
         Addopt
       </Button>
     </FadeInSection>

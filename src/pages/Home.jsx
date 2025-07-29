@@ -12,7 +12,7 @@ export default function Home({ eyeRefs }) {
   return (
     <div className="min-h-screen">
       {/* section 1 */}
-      <section className="flex sm:justify-center sm:flex-row pt-20 sm:space-x-10 pb-30 border-b-4">
+      <section className="flex flex-col px-6 pt-20 sm:space-x-10 pb-30 border-b-4">
         <HeroText />
         <CatImageWithEyes eyeRefs={eyeRefs} />
       </section>
