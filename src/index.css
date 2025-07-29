@@ -5,8 +5,8 @@
 
 :root {
   --background: oklch(96.22% 0.0569 95.61);
-  --secondary-background: oklch(91.058% 0.10581 94.434);
-  --third-background:#ffedac;
+  --secondary-background: #f8e18e;
+  --third-background:#FFE37F;
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(84.08% 0.1725 84.2);
