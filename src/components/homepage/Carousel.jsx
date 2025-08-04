@@ -27,23 +27,25 @@ export default function CarouselDemo({ onSlideChange }) {
   }, [api])
 
   return (
-      <Carousel className="w-full max-w-[450px] " setApi={setApi}>
+      <Carousel className="" setApi={setApi}>
         <CarouselContent>
           {carousellist.map((cat) => (
             <CarouselItem key={cat.id}>
-              <div className="p-[30px]">
+              <div className="p-15">
                 <ImageCard
                   imageUrl={cat.image}
                   caption={cat.nama}
                   umur={cat.umur}
-                  className="w-full h-[400px] object-cover rounded-xl"
+                  className="w-full object-cover rounded-xl"
                 />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className="flex justify-center gap-10">
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
       </Carousel>
   )
 }

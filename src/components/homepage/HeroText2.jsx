@@ -2,7 +2,7 @@ import FadeInSection from "../animations/FadeInSection"
 import { Button } from "../ui/button"
 export default function HeroText2({ cat}) {
   return (
-        <div className="w-120 ">
+        <div className="p-6">
             <h1 className="text-4xl ">Kisah Kecil Dari Cerita Kami</h1>
             <FadeInSection
             initial={{opacity:0,x:-20}}

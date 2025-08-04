@@ -18,11 +18,11 @@ export default function Home({ eyeRefs }) {
       </section>
 
       {/* section 2 */}
-      <section className="flex sm:justify-center gap-30 bg-secondary-background border-b-4  ">
-        <div className="py-20">
+      <section className="flex flex-col  bg-secondary-background border-b-4  ">
+        <div className="">
           <Carousel onSlideChange={setSelectedCat} />
         </div>
-        <div className="py-20 pl-6 border-l-4">
+        <div>
           <HeroText2 
           cat={selectedCat}
           key={selectedCat.id}/>
