@@ -3,12 +3,11 @@ import { Button } from "../ui/button"
 export default function HeroText2({ cat}) {
   return (
         <div className="p-6">
-            <h1 className="text-4xl ">Kisah Kecil Dari Cerita Kami</h1>
             <FadeInSection
             initial={{opacity:0,x:-20}}
             animate={{opacity:1,x:0}}
             >
-                <h2 className="text-2xl py-10">{cat.nama}</h2>
+                <h2 className="text-2xl py-5">{cat.nama}</h2>
             </FadeInSection>
 
             <FadeInSection

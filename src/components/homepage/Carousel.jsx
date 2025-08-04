@@ -27,11 +27,13 @@ export default function CarouselDemo({ onSlideChange }) {
   }, [api])
 
   return (
+    <>
+      <h1 className="text-3xl px-6">Kisah Kecil Dari Cerita Kami</h1>
       <Carousel className="" setApi={setApi}>
         <CarouselContent>
           {carousellist.map((cat) => (
             <CarouselItem key={cat.id}>
-              <div className="p-15">
+              <div className="p-10">
                 <ImageCard
                   imageUrl={cat.image}
                   caption={cat.nama}
@@ -47,5 +49,6 @@ export default function CarouselDemo({ onSlideChange }) {
           <CarouselNext />
         </div>
       </Carousel>
+    </>
   )
 }
