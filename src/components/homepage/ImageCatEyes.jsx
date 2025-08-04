@@ -3,7 +3,7 @@ import Kucing from "@/assets/images/kucing.png";
 
 export default function CatImageWithEyes({ eyeRefs }) {
   return (
-    <div className="relative z-[-1] pt-0  border-b-4 border-black h-80 w-100">
+    <div className="relative z-[-1] pt-0  border-b-4 border-black h-80 w-full">
       {/* Mata kanan */}
       <div
         className="absolute w-12 h-14 bg-white border rounded-full border-black flex items-center justify-center top-[45%] left-[33%] sm:left-[34%]"
