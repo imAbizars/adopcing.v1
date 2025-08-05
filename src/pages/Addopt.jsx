@@ -1,7 +1,7 @@
 export default function Addopt(){
     return(
-        <div>
-            halaman adopsi
+        <div className="min-h-screen">
+            halaman adopsi to be continue..
         </div>
     )
 }
